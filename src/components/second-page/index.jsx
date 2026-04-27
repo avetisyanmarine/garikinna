@@ -26,9 +26,9 @@ export const SecondPage = () => {
         </div>
       </Container>
       <Container>
-        <div className="flex h-[100vh] relative gap-[20px] justify-around mt-10">
+        <div className="flex h-[100vh] gap-[20px] justify-around mt-10">
           <div>
-            <img src={Photo2} className="h-[80vh] absolute top-1/2 -translate-y-1/2 right-1/2 -translate-x-1/2" />
+            <img src={Photo2} className="h-[80vh] mt-20" />
           </div>
           <div className="flex flex-col gap-2">
             <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-[10px]" />

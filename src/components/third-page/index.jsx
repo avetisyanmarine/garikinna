@@ -29,7 +29,7 @@ export const ThirdPage = () => {
             ImageSrc={Haverjutyun}
             number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="Ոսկանյան 45 տուն"
+            smallText="Ոսկանյան 45"
           />
           <ThirdPageBlock
             imageSize={100}

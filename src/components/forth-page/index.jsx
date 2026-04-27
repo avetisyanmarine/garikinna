@@ -14,7 +14,7 @@ import { GridDiv } from "../second-page/styled";
 import { useEffect, useState } from "react";
 
 export const ForthPage = () => {
-  const weddingDate = new Date(2026, 4, 26, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 22, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();

@@ -50,7 +50,7 @@ export const ForthPage = () => {
           <ForthPageBlock
             ImageSrc={Church}
             bigText={"Սուրբ Աննա եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/s5K49c9MwQWN15yVA"}
+            mapSrc={"https://maps.app.goo.gl/JDMBUa8TCxL2oKRW8"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}

@@ -9,43 +9,46 @@ import Haverjutyun from "../../assets/image/haverjutyun.png";
 import Church from "../../assets/image/church.png";
 import Kenac from "../../assets/image/kenac.png";
 import { ThirdPageBlock } from "./third-page-block";
-import { TextShadow } from "../TextShadow";
 
 export const ThirdPage = () => {
   return (
     <ThirdPagePart>
       <Container>
-        <TextShadow title="Ժամանակացույց" />
+        <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            // imageSize={80}
-            number={"13:00"}
+            imageSize={50}
+            ImageSrc={null}
+            number={"10:30"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
+            smallText="Սողոմոն Տարոնցու 1նրբանցք 4րդ շենք"
           />
           <ThirdPageBlock
-            // uniqueMargin={50}
-            // imageSize={80}
-            number={"13:30"}
+            uniqueMargin={10}
+            imageSize={100}
+            ImageSrc={Haverjutyun}
+            number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
+            smallText="Ոսկանյան 45\1 տուն"
           />
           <ThirdPageBlock
-            // uniqueMargin={50}
-            imageSize={80}
-            number={"14:30"}
+            imageSize={100}
+            ImageSrc={Church}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
+            smallText="Սուրբ Աննա եկեղեցի"
           />
           <ThirdPageBlock
-            // imageSize={80}
-            number={"17:30"}
+            line={true}
+            ImageSrc={Kenac}
+            imageSize={90}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Նոր Դվին Ռեստորան"
+            smallText="Հրաշք Այգի Ռեստորան"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>
-          {/* <h3>Սիրով սպասում ենք</h3> */}
+          <h3>Սիրով սպասում ենք</h3>
           <hr />
         </ThirdPagePartMini>
       </Container>

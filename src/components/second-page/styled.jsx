@@ -11,6 +11,7 @@ const SecondPagePart = styled.div`
 `;
 
 const GridDiv = styled(Flexible)`
+margin-bottom: 50px;
   div {
     flex-direction: column;
     text-align: center;

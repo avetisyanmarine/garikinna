@@ -1,5 +1,5 @@
 import { ThirdPagePartContext } from "../styled";
-import { ThirdPageBlockPart, ThirdPageBlockPartContext, ThirdPageBlockPartSvg } from "./styled";
+import { ThirdPageBlockPart, ThirdPageBlockPartSvg } from "./styled";
 import Arrow from "../../../assets/image/arrow.png";
 
 export const ThirdPageBlock = ({
@@ -14,16 +14,17 @@ export const ThirdPageBlock = ({
   return (
     <>
       <ThirdPageBlockPart
-        style={{ marginTop: uniqueMargin ? `${uniqueMargin}px` : "20px" }}
+        style={{ marginTop: uniqueMargin ? `${uniqueMargin}px` : "" }}
       >
-          <h2 className="rotate-270 border-b">{number}</h2>
-        {/* <ThirdPageBlockPartSvg line={line} className="flex"> */}
-          {/* <div className="mb-2  w-[1.5px] h-22.5 bg-[#292929]"></div> */}
-        {/* </ThirdPageBlockPartSvg> */}
-        <ThirdPageBlockPartContext data-aos="fade-up">
+        <ThirdPageBlockPartSvg line={line}>
+          <img loading="lazy" src={ImageSrc} width={imageSize} />
+        </ThirdPageBlockPartSvg>
+        <ThirdPagePartContext data-aos="fade-up">
+          <h3>{number}</h3>
           <h3>{bigText}</h3>
           <p>{smallText}</p>
-        </ThirdPageBlockPartContext>
+        </ThirdPagePartContext>
+        {!line && <img src={Arrow} className="mb-5" />}
       </ThirdPageBlockPart>
     </>
   );

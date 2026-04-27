@@ -4,96 +4,31 @@ import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/serliqyser.png";
 import BlockImage from "../../assets/image/blockimage.jpg";
 import PhotoF1 from "../../assets/image/photof1.jpg";
-import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
-import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
-import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
+import PhotoGroup1 from "../../assets/image/groupphoto1.JPG";
+import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
+import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 4, 26, 0, 0, 0);
-
-  const calculateTimeLeft = () => {
-    const now = new Date();
-    const diff = weddingDate - now;
-
-    if (diff <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
-
-    return {
-      days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((diff / (1000 * 60)) % 60),
-      seconds: Math.floor((diff / 1000) % 60),
-    };
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const formatNumber = (num) => String(num).padStart(2, "0");
 
   return (
     <SecondPagePart className="mb-10 mt-6">
       <Container>
-        <div>
-          <h2 className="mb-10" data-aos="zoom-in">
-            Միջոցառմանը մնաց
-          </h2>
-          <GridDiv>
-            <Flexible data-aos="flip-up">
-              <h2>{formatNumber(timeLeft.days)}</h2>
-              <p>Օր</p>
-            </Flexible>
-            <Flexible
-              data-aos="flip-up"
-              data-aos-duration="900"
-              data-aos-delay="450"
-            >
-              <h2>{formatNumber(timeLeft.hours)}</h2>
-              <p>Ժամ</p>
-            </Flexible>
-            <Flexible
-              data-aos="flip-up"
-              data-aos-duration="900"
-              data-aos-delay="600"
-            >
-              <h2>{formatNumber(timeLeft.minutes)}</h2>
-              <p>Րոպե</p>
-            </Flexible>
-            <Flexible
-              className="uniqueBorder"
-              data-aos="flip-up"
-              data-aos-duration="900"
-              data-aos-delay="750"
-            >
-              <h2>{formatNumber(timeLeft.seconds)}</h2>
-              <p>Վրկ</p>
-            </Flexible>
-          </GridDiv>
-        </div>
-        <div className="mt-16 mb-7">
-          <TextShadow title="Սիրելի հյուրեր" />
+        <div className="mt-6">
+          <TextShadow title="Սիրելի հյուր" />
           <Flexible className="font-[500]">
             <p className="text-[18px]">
-              Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր հարսանյաց հանդիսությանը
-              և կիսելու մեր ուրախությունը։
+              Սիրով հրավիրում ենք ներկա գտնվելու մեր հարսանյաց խնջույքին
+              և դառնալու մեր կյանքի օրվա մի մասը։
             </p>
           </Flexible>
         </div>
       </Container>
       <Container>
-        <div className="flex h-[100vh] gap-[20px] justify-around">
+        <div className="flex h-[100vh] relative gap-[20px] justify-around mt-10">
           <div>
-            <img src={Photo2} className="h-[100vh] w-full" />
+            <img src={Photo2} className="h-[80vh] absolute top-1/2 -translate-y-1/2 right-1/2 -translate-x-1/2" />
           </div>
           <div className="flex flex-col gap-2">
             <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-[10px]" />
@@ -122,7 +57,7 @@ export const SecondPage = () => {
           ))}
           {[...Array(37)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i + 1 == 26 ? "special" : ""}>{i + 1}</div>
+              <div className={i + 1 == 22 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),

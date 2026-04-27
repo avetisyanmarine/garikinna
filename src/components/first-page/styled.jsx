@@ -30,7 +30,7 @@ const FirstPagePartContext = styled.div`
       font-size: 22px;
     }
     h3 {
-      font-size: 45px;
+      font-size: 35px;
     }
   }
   h2 {

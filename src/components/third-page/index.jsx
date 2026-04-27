@@ -17,8 +17,8 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            imageSize={50}
-            ImageSrc={null}
+            imageSize={100}
+            // ImageSrc={Haverjutyun}
             number={"10:30"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
             smallText="Սողոմոն Տարոնցու 1նրբանցք 4րդ շենք"

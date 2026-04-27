@@ -119,6 +119,7 @@ export const ForthPage = () => {
               <p>Վրկ</p>
             </Flexible>
           </GridDiv>
+          <hr className="mb-10" />
         </div>
         <AttendanceGuests />
         <div className="flex flex-col items-center my-5">

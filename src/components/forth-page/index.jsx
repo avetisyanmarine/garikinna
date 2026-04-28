@@ -120,12 +120,31 @@ export const ForthPage = () => {
         </div>
         <AttendanceGuests />
         <div className="flex flex-col items-center my-5">
-          <img data-aos="fade-right" src={Table} alt="Photo 1" />
+          <div 
+    className="relative w-full max-w-[500px] overflow-hidden rounded-[15px] shadow-lg mb-6" 
+    data-aos="fade-up"
+  >
+    {/* Նկարը բլուր արած */}
+    <img 
+      className="blur-[8px] scale-110 w-full h-auto object-cover" 
+      src={Table} 
+      alt="Table List" 
+    />
+
+    {/* Տեքստը կենտրոնում */}
+    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/20">
+      <div className="bg-white/50 backdrop-blur-sm px-6 py-4 rounded-xl shadow-sm border border-white/50">
+        <p className="text-[#1e1e1e] text-lg font-semibold text-center">
+          Այստեղ լինելու է <br /> սեղանների ցուցակը
+        </p>
+      </div>
+    </div>
+  </div>
 
           <a
             href={Table}
             download="table.jpg"
-            className="px-6 py-2 bg-[#1e1e1e] text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2"
+            className="px-6 py-2 bg-[#1e1e1e]  text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2"
           >
             <span>Ներբեռնել</span>
             <svg

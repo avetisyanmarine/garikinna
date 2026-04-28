@@ -15,7 +15,7 @@ export const SecondPage = () => {
     <SecondPagePart className="mb-10 mt-6">
       <Container>
         <div className="mt-6">
-          <h2>Սիրելի հյուրեր</h2>
+          <h2 className="mb-5">Սիրելի հյուրեր</h2>
           <Flexible className="font-[500]">
             <p className="text-[18px]">
               Սիրով հրավիրում ենք ներկա գտնվելու մեր հարսանյաց հանդիսությանը և
@@ -27,7 +27,7 @@ export const SecondPage = () => {
       <Container>
         <div className="flex h-[100vh] gap-[20px] justify-around mt-10">
           <div>
-            <img src={Photo2} className="h-[80vh] mt-20" />
+            <img src={Photo2} className="h-[65vh] mt-30" />
           </div>
           <div className="flex flex-col gap-2">
             <img

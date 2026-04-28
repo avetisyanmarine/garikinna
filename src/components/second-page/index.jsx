@@ -11,16 +11,15 @@ import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-
   return (
     <SecondPagePart className="mb-10 mt-6">
       <Container>
         <div className="mt-6">
-          <TextShadow title="Սիրելի հյուր" />
+          <h2>Սիրելի հյուրեր</h2>
           <Flexible className="font-[500]">
             <p className="text-[18px]">
-              Սիրով հրավիրում ենք ներկա գտնվելու մեր հարսանյաց խնջույքին
-              և դառնալու մեր կյանքի կարևոր օրվա մի մասը։
+              Սիրով հրավիրում ենք ներկա գտնվելու մեր հարսանյաց հանդիսությանը և
+              դառնալու մեր կյանքի կարևոր օրվա մի մասը։
             </p>
           </Flexible>
         </div>
@@ -31,9 +30,21 @@ export const SecondPage = () => {
             <img src={Photo2} className="h-[80vh] mt-20" />
           </div>
           <div className="flex flex-col gap-2">
-            <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-[10px]" />
-            <img src={PhotoGroup2} alt="" className="h-1/3 object-cover rounded-[10px]" />
-            <img src={PhotoGroup3} alt="" className="h-1/3 object-cover rounded-[10px]" />
+            <img
+              src={PhotoGroup1}
+              alt=""
+              className="h-1/3 object-cover rounded-[10px]"
+            />
+            <img
+              src={PhotoGroup2}
+              alt=""
+              className="h-1/3 object-cover rounded-[10px]"
+            />
+            <img
+              src={PhotoGroup3}
+              alt=""
+              className="h-1/3 object-cover rounded-[10px]"
+            />
           </div>
         </div>
       </Container>
@@ -63,7 +74,7 @@ export const SecondPage = () => {
             ),
           )}
         </ThirdPagePartCalendar>
-        
+
         <img src={PhotoF1} alt="" className="rounded-[15px] mt-[50px]" />
       </Container>
     </SecondPagePart>

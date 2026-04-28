@@ -138,6 +138,7 @@ export const ForthPage = () => {
           Այստեղ լինելու է <br /> սեղանների ցուցակը
         </p>
       </div>
+      
     </div>
   </div>
 

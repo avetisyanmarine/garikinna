@@ -141,7 +141,7 @@ export const ForthPage = () => {
     </div>
   </div>
 
-          <a
+          {/* <a
             href={Table}
             download="table.jpg"
             className="px-6 py-2 bg-[#1e1e1e]  text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2"
@@ -162,7 +162,7 @@ export const ForthPage = () => {
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-          </a>
+          </a> */}
         </div>
       </Container>
     </ForthPagePart>

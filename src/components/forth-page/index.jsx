@@ -5,7 +5,8 @@ import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.jpg";
 import HeartLine from "../../assets/image/heartline.png";
 import Photo3 from "../../assets/image/examp2.jpg";
-import Table from "../../assets/image/table.png";
+import BrideRoomSittingBanner from "../../assets/image/brideroomsittingbanner.png";
+import BrideSittingBanner from "../../assets/image/bridesittingbanner.png";
 import PhotoF2 from "../../assets/image/photof2.jpg";
 import Bant from "../../assets/image/bant.png";
 import AttendanceGuests from "./../AttendanceGuests/index";
@@ -120,50 +121,81 @@ export const ForthPage = () => {
         </div>
         <AttendanceGuests />
         <div className="flex flex-col items-center my-5">
-          <div 
-    className="relative w-full max-w-[500px] overflow-hidden rounded-[15px] shadow-lg mb-6" 
-    data-aos="fade-up"
-  >
-    {/* Նկարը բլուր արած */}
-    <img 
-      className="blur-[8px] scale-110 w-full h-auto object-cover" 
-      src={Table} 
-      alt="Table List" 
-    />
-
-    {/* Տեքստը կենտրոնում */}
-    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/20">
-      <div className="bg-white/50 backdrop-blur-sm px-6 py-4 rounded-xl shadow-sm border border-white/50">
-        <p className="text-[#1e1e1e] text-lg font-semibold text-center">
-          Այստեղ լինելու է <br /> սեղանների ցուցակը
-        </p>
-      </div>
-      
-    </div>
-  </div>
-
-          {/* <a
-            href={Table}
-            download="table.jpg"
-            className="px-6 py-2 bg-[#1e1e1e]  text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2"
-          >
-            <span>Ներբեռնել</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          {/* Փեսայի Հյուրեր */}
+          <div data-aos="fade-up">
+            <h3 className="text-center mb-4 text-[20px] font-[600]">Փեսայի Հյուրեր</h3>
+            <div 
+              className="relative w-full max-w-[500px] overflow-hidden rounded-[15px] shadow-lg mb-4" 
             >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </a> */}
+              <img 
+                className="scale-110 w-full h-auto object-cover" 
+                src={BrideRoomSittingBanner} 
+                alt="Groom's Guests List" 
+              />
+            </div>
+            <div className="text-center mb-8">
+              <a
+                href={BrideRoomSittingBanner}
+                download="pesayi-hyurer.jpg"
+                className="px-6 py-2 bg-[#1e1e1e] text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2 inline-flex"
+              >
+                <span>Ներբեռնել</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Հարսի Հյուրեր */}
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h3 className="text-center mb-4 text-[20px] font-[600]">Հարսի Հյուրեր</h3>
+            <div 
+              className="relative w-full max-w-[500px] overflow-hidden rounded-[15px] shadow-lg mb-4" 
+            >
+              <img 
+                className="scale-110 w-full h-auto object-cover" 
+                src={BrideSittingBanner} 
+                alt="Bride's Guests List" 
+              />
+            </div>
+            <div className="text-center">
+              <a
+                href={BrideSittingBanner}
+                download="harsi-hyurer.jpg"
+                className="px-6 py-2 bg-[#1e1e1e] text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-md flex items-center gap-2 inline-flex"
+              >
+                <span>Ներբեռնել</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </Container>
     </ForthPagePart>
